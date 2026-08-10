@@ -14,8 +14,12 @@ Windows and Android.
   explain why and what to click.
 - **Android** — `minuted.apk`.
 
-An MSIX package is published alongside the installer for anyone who would rather
-have one. See the release notes for what it needs.
+A packaged **MSIX** build is published too, but `Minuted-Setup.exe` is the one to
+use. Installing the MSIX means running a script as administrator and telling
+Windows to permanently trust a certificate we signed ourselves — from then on
+your machine trusts anything signed with that key, until you remove it. That is a
+larger and longer-lived decision than clicking past the SmartScreen warning once.
+It is published for people who specifically need a packaged install.
 
 ## About
 
